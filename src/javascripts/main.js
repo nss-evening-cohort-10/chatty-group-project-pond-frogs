@@ -1,9 +1,10 @@
 import 'bootstrap';
 
 import '../styles/main.scss';
+import navbar from './components/navbar/navbar';
 
 const init = () => {
-  console.error('hi');
+  navbar.printNavbar();
 };
 
 init();
