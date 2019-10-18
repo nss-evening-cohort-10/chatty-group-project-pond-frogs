@@ -22,6 +22,6 @@ const seedData = [
 
 ];
 
-const messages = () => seedData();
+const messages = () => seedData;
 
 export default { messages };
