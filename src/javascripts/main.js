@@ -2,10 +2,11 @@ import 'bootstrap';
 import displayMessages from './displayMessages/displayMessages';
 
 import '../styles/main.scss';
+import navbar from './components/navbar/navbar';
 
 const init = () => {
-  console.error('hi');
   displayMessages.printMessageCards();
+  navbar.printNavbar();
 };
 
 init();
