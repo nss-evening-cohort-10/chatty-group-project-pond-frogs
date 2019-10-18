@@ -1,8 +1,10 @@
 import $ from 'jquery';
 import utilities from '../../helpers/utlities';
 
+let domString = '';
+
 const printMessage = () => {
-  const domString = $('#message-input').val();
+  domString += $('#message-input').val();
   utilities.printToDom('message-flow', domString);
 };
 
