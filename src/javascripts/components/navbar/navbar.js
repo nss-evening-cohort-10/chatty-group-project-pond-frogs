@@ -8,8 +8,8 @@ const printNavbar = () => {
   domString += '</div>';
   domString += '<div id="message-holder" class="col-8">';
   domString += '<form class="form-inline">';
-  domString += '<input id="message-input" class="form-control mr-sm-2" type="search" placeholder="Your message here" aria-label="Search">';
-  domString += '<button class="btn btn-info my-2 my-sm-0" type="submit">Clear</button>';
+  domString += '<input id="message-input" type="text" class="form mr-sm-2" placeholder="Your message here">';
+  domString += '<button class="btn btn-info my-2 my-sm-0">Clear</button>';
   domString += '</form>';
   domString += '</div>';
   domString += '</div>';
