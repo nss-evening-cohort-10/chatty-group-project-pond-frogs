@@ -1,7 +1,12 @@
 import $ from 'jquery';
 
+import utilities from '../../helpers/utlities';
+
 const clearButton = () => {
-  $().remove('#message-field').click('.clear');
+  $('body').on('click', '.clear', (e) => {
+    e.preventDefault();
+    utilities.printToDom('message-field', '');
+  });
 };
 
 export default { clearButton };

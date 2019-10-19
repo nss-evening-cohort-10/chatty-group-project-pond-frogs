@@ -1,18 +1,18 @@
 const seedData = [
   {
-    message: '<p>Why was the JavaScript developer sad?</p><p>Because they didn’t Node how to Express themself</p>',
+    message: 'Why was the JavaScript developer sad?</p><p>Because they didn’t Node how to Express themself',
     timestamp: '',
   },
   {
-    message: '<p>Why did the react class component feel relieved?</p><p>Because it was now off the hook.</p>',
+    message: 'Why did the react class component feel relieved?</p><p>Because it was now off the hook.',
     timestamp: '',
   },
   {
-    message: '<p>How do you comfort a JavaScript bug?</p><p>You console it.</p>',
+    message: 'How do you comfort a JavaScript bug?</p><So>You console it.',
     timestamp: '',
   },
   {
-    message: '<p>And the bartender says, "Success, but you\'re not ready!"</p><p>So a JavaScript function walks into a bar.</p>',
+    message: 'And the bartender says, "Success, but you\'re not ready!" So a JavaScript function walks into a bar.',
     timestamp: '',
   },
   {
@@ -24,4 +24,6 @@ const seedData = [
 
 const messages = () => seedData;
 
-export default { messages };
+const addMessage = (newMessage) => seedData.push(newMessage);
+
+export default { messages, addMessage };
