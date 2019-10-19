@@ -9,7 +9,7 @@ const printMessage = () => {
   domString += '<div class="arrow bottom right"></div>';
   domString += $('#message-input').val();
   domString += '</div>';
-  utilities.printToDom('message-flow', domString);
+  utilities.printToDom('message-field', domString);
 };
 
 const addMessage = () => {

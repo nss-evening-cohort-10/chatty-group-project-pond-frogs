@@ -1,5 +1,5 @@
 import 'bootstrap';
-import displayMessages from './displayMessages/displayMessages';
+import displayMessages from './components/displayMessages/displayMessages';
 
 import '../styles/main.scss';
 import navbar from './components/navbar/navbar';
