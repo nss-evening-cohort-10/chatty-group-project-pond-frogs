@@ -1,9 +1,30 @@
 #message-field {
   display: flex;
-  flex-direction: column;
-
-
-  .card{
-    margin: 15px;
+  flex-flow: column-reverse;
+  align-items: center;
+  
+  .card {
+    background-color: #d4ebf2;
+    margin: 1em;
+  
+    .message-body {
+        background-color: #d4ebf2;
+        height: fit-content;
+        min-height: 35px;
+        border-radius: 4px;
+        text-align: left;
+        padding: 10px;
+       
+        .arrow {
+            border-style: solid;
+            position: absolute;
+        }
+        
+        .bottom {
+            border-color: #d4ebf2 transparent transparent transparent;
+            border-width: 8px 8px 0px 8px;
+            bottom: -8px;
+        }
+    }
   }
 }
