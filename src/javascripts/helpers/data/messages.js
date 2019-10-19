@@ -12,7 +12,7 @@ const seedData = [
     timestamp: '',
   },
   {
-    message: '<p>And the bartender says, "Success, but yer not ready!"</p><p>So a JavaScript function walks into a bar.</p>',
+    message: '<p>And the bartender says, "Success, but you\'re not ready!"</p><p>So a JavaScript function walks into a bar.</p>',
     timestamp: '',
   },
   {

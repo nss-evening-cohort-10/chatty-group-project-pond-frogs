@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import moment from 'moment';
 import utilities from '../../helpers/utlities';
 import './addMessage.scss';
 
@@ -8,8 +9,9 @@ const printMessage = () => {
   domString += '<div id="message-bubble" class="card">';
   domString += '<div class="arrow bottom right"></div>';
   domString += $('#message-input').val();
+  domString += `<div>${moment().format('lll')}</div>`;
   domString += '</div>';
-  utilities.printToDom('message-flow', domString);
+  utilities.printToDom('added-message-field', domString);
 };
 
 const addMessage = () => {
