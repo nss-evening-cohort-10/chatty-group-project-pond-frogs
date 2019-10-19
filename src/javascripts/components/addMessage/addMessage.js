@@ -11,7 +11,7 @@ const printMessage = () => {
   domString += $('#message-input').val();
   domString += `<div>${moment().format('lll')}</div>`;
   domString += '</div>';
-  utilities.printToDom('message-field', domString);
+  utilities.printToDom('added-message-field', domString);
 };
 
 const addMessage = () => {
