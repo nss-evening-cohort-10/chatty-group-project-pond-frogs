@@ -9,12 +9,11 @@ const printMessage = () => {
   domString += '<div class="arrow bottom right"></div>';
   domString += $('#message-input').val();
   domString += '</div>';
-  utilities.printToDom('message-field', domString);
+  utilities.printToDom('message-flow', domString);
 };
 
 const addMessage = () => {
   $('body').on('keydown', '#message-input', (e) => {
-    console.log(e.key);
     if (e.keyCode === 13) {
       e.preventDefault();
       printMessage();

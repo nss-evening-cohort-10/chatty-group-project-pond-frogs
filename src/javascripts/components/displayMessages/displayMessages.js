@@ -7,7 +7,7 @@ const printMessageCards = () => {
   const messages = seedData.messages();
   let domString = '';
   messages.forEach((message) => {
-    domString += '<div class="card col-3">';
+    domString += '<div class="card col-5">';
     domString += '<div class="card-body">';
     domString += `<div>${message.message}</div>`;
     domString += '</div>';
