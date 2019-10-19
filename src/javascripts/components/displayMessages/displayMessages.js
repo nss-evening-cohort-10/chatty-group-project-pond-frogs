@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 import utilities from '../../helpers/utlities';
 import seedData from '../../helpers/data/messages';
 
@@ -10,10 +12,12 @@ const printMessageCards = () => {
     domString += '<div class="card col-3">';
     domString += '<div class="card-body">';
     domString += `<div>${message.message}</div>`;
+    domString += `<div>${moment().format('lll')}</div>`;
     domString += '</div>';
     domString += '</div>';
   });
   utilities.printToDom('message-field', domString);
 };
+
 
 export default { printMessageCards };
