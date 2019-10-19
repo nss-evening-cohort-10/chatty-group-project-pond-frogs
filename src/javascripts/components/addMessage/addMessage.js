@@ -5,7 +5,7 @@ import './addMessage.scss';
 let domString = '';
 
 const printMessage = () => {
-  domString += '<div id="message-bubble">';
+  domString += '<div id="message-bubble" class="card">';
   domString += '<div class="arrow bottom right"></div>';
   domString += $('#message-input').val();
   domString += '</div>';
