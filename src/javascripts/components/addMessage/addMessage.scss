@@ -1,0 +1,28 @@
+#message-field {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    #message-bubble {
+        background-color: #d4ebf2;
+        height: fit-content;
+        min-height: 35px;
+        width: 40%;
+        border-radius: 4px;
+        text-align: left;
+        padding: 10px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+        .arrow {
+            border-style: solid;
+            position: absolute;
+        }
+         
+        .bottom {
+            border-color: #d4ebf2 transparent transparent transparent;
+            border-width: 8px 8px 0px 8px;
+            bottom: -8px;
+        }
+    }
+}

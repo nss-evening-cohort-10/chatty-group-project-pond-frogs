@@ -1,7 +1,7 @@
 import moment from 'moment';
 
-import utilities from '../helpers/utlities';
-import seedData from '../helpers/data/messages';
+import utilities from '../../helpers/utlities';
+import seedData from '../../helpers/data/messages';
 
 import './displayMessages.scss';
 
@@ -17,7 +17,6 @@ const printMessageCards = () => {
     domString += '</div>';
   });
   utilities.printToDom('message-field', domString);
-  console.error(moment().format('lll'));
 };
 
 
