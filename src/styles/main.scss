@@ -1,6 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
-
+@import './themeMaps';
 
 body {
-  background-color: lightgray;
+  background-color: $liteGray;
 }

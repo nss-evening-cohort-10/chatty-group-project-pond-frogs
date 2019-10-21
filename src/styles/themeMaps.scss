@@ -1,4 +1,4 @@
-@import '../javascripts/components/themes/defaultThemes.scss';
+@import '../javascripts/components/defaultThemes/defaultThemes.scss';
 
 .app-container {
   @include themify($themes) {
