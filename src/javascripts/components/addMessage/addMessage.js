@@ -18,4 +18,10 @@ const addMessage = () => {
     }
   });
 };
-export default { addMessage };
+
+const uniqueId = () => {
+  const id = Math.random().toString(26).substr(2, 2);
+  // $('element').attr('id', 'value');
+  console.error(id);
+};
+export default { addMessage, uniqueId };
