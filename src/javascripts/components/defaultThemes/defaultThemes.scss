@@ -1,0 +1,52 @@
+@import '../../../styles/colors';
+
+$themes: (
+  light: (
+    navbar: $darkGray,
+    backgroundColor: $liteGray,
+    inputField: $white,
+    inputFieldTextColor: $blackText,
+    checkboxColor: $blackText,
+    logoColor: $blackText,
+    clearButtonTextColor: $white,
+    clearButtonColor: $blue,
+    clearButtonBorder: 2px solid $liteBlue,
+    messageBubbleTextColor: $blackText,
+    messageBubbleBackground: $liteBlue,
+    deleteButtonColor: $red, 
+  ),
+  
+  dark: (
+    navbar: $charcoal,
+    inputField: $shadow,
+    backgroundColor: $shadow,
+    inputFieldTextColor: $mcgreen,
+    checkboxColor: $mcgreen,
+    logoColor: $white,
+    clearButtonTextColor: $litePurple,
+    clearButtonColor: $neonPurple,
+    clearButtonBorder: 2px solid $litePurple,
+    messageBubbleTextColor: $white,
+    messageBubbleBackground:$brimstone, 
+    deleteButtonTextColor: $mcgreen, 
+  ),
+);
+
+
+@mixin themify($themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
