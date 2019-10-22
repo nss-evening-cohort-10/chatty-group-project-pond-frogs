@@ -9,7 +9,7 @@ import clear from './components/clearButton/clearButton';
 const init = () => {
   displayMessages.printMessageCards();
   navbar.printNavbar();
-  add.uniqueId();
+  // add.uniqueId();
   add.addMessage();
   clear.clearButton();
 };

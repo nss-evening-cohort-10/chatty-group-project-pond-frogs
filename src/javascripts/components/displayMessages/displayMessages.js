@@ -13,6 +13,7 @@ const printMessageCards = () => {
     domString += '<div class="card-body arrow bottom">';
     domString += `<div class="message-body">${message.message}</div>`;
     domString += `<div>${moment(message.timestamp).format('lll')}</div>`;
+    domString += `<button id=${message.id}>x</button>`;
     domString += '</div>';
     domString += '</div>';
   });

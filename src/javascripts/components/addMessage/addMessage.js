@@ -8,20 +8,18 @@ const addMessage = () => {
   $('body').on('keydown', '#message-input', (e) => {
     if (e.keyCode === 13) {
       e.preventDefault();
+      const id = Math.floor((Math.random() * 100) + 1000);
       // printMessage();
       const newMessage = {
         message: $('#message-input').val(),
         timestamp: moment().format('lll'),
+        id: `A${id}`,
       };
       m.addMessage(newMessage);
       aMessage.printMessageCards();
+      console.error(newMessage);
     }
   });
 };
 
-const uniqueId = () => {
-  const id = Math.random().toString(26).substr(2, 2);
-  // $('element').attr('id', 'value');
-  console.error(id);
-};
-export default { addMessage, uniqueId };
+export default { addMessage };
