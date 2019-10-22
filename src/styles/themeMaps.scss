@@ -10,9 +10,11 @@
       background-color: themed('navbar');
     }
 
-    .logo {
+    img {
       @include themify($themes) {
-      color: themed('logoColor')
+      border-radius: 40%;
+      margin-top: 1em;
+      margin-left: 1em;
       }
     }       
 
@@ -22,6 +24,7 @@
         border: themed('clearButtonBorder');
         color: themed('clearButtonTextColor'); 
         background-color: themed('clearButtonColor');
+        margin: 3px;
       }
     }
     #message-input  {
