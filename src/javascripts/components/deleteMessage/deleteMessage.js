@@ -2,10 +2,10 @@ import $ from 'jquery';
 
 import './deleteMessage.scss';
 
-const removeMssg = () => {
-  $('.delete').click(() => {
-    console.error('you clicked the X');
-  });
+
+const deleteMessage = (id) => {
+  $('button').on('click').find(id.id).remove();
+  console.error(id.id);
 };
 
-export default { removeMssg };
+export default { deleteMessage };
