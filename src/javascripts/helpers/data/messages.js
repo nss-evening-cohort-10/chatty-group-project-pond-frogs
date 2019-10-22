@@ -26,4 +26,4 @@ const messages = () => seedData;
 
 const addMessage = (newMessage) => seedData.push(newMessage);
 
-export default { messages, addMessage };
+export default { messages, addMessage, seedData };

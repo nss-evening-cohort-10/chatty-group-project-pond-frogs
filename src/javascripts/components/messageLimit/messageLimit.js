@@ -1,13 +1,16 @@
 // import $ from 'jquery';
 
-// const numMessages = $('.card').length;
+// import n from '../addMessage/addMessage';
 
+// const getNumMessages = () => d.seedData.length;
 
-const limitMessages = () => {
-  // console.log(numMessages);
-// if (numMessages > 15) {
+// const numMessages =
+
+// const limitMessages = () => {
+// console.log(n.numMessages);
+// if (numMessages > 20) {
 // console.error($('.card:last')).html();
 // }
-};
+// };
 
-export default { limitMessages };
+// export default { limitMessages };
