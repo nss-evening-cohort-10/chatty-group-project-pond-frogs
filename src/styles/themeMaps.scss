@@ -1,0 +1,61 @@
+@import '../javascripts/components/defaultThemes/defaultThemes.scss';
+
+.app-container {
+  @include themify($themes) {
+    background-color: themed('backgroundColor');  
+  }
+
+  #navigation {
+    @include themify($themes) {
+      background-color: themed('navbar');
+    }
+
+    .logo {
+      @include themify($themes) {
+      color: themed('logoColor')
+      }
+    }       
+
+    button {
+      
+      @include themify($themes) {
+        border: themed('clearButtonBorder');
+        color: themed('clearButtonTextColor'); 
+        background-color: themed('clearButtonColor');
+      }
+    }
+    #message-input  {
+      @include themify($themes) {
+      background-color: themed('inputField');
+      color: themed('inputFieldTextColor');
+      }
+    }
+
+    .checkboxHolder {
+      @include themify($themes) {
+      color: themed('checkboxColor');
+      }
+    }
+  }
+
+  .card-body {
+    @include themify($themes) {
+    color: themed('messageBubbleTextColor');
+    background-color: themed('messageBubbleBackground');
+    
+    .message-body {
+      @include themify($themes) {
+      color: themed('messageBubbleTextColor');
+      background-color: themed('messageBubbleBackground');
+      }
+    }
+
+    .delete-button { 
+      @include themify($themes) {
+      color: themed('deleteButtonColor'); 
+        }
+      }
+    }
+  }; 
+
+};
