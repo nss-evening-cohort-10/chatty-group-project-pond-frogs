@@ -1,4 +1,4 @@
-const seedData = [
+let seedData = [
   {
     id: 'message1',
     message: 'Why was the JavaScript developer sad?</p><p>Because they didn’t Node how to Express themself',
@@ -37,6 +37,14 @@ const deleteMessage = (id) => {
   console.error(correctIndex);
 };
 
+const clearMessages = () => {
+  seedData = [];
+};
+
 export default {
-  messages, addMessage, seedData, deleteMessage,
+  messages,
+  addMessage,
+  seedData,
+  clearMessages,
+  deleteMessage,
 };
