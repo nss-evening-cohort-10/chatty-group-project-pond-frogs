@@ -31,6 +31,12 @@ const messages = () => seedData.slice(Math.max(seedData.length - 20, 0));
 
 const addMessage = (newMessage) => seedData.push(newMessage);
 
+const deleteMessage = (id) => {
+  const correctIndex = seedData.findIndex((x) => x.id === id);
+  seedData.splice(correctIndex, 1);
+  console.error(correctIndex);
+};
+
 const clearMessages = () => {
   seedData = [];
 };
@@ -40,4 +46,5 @@ export default {
   addMessage,
   seedData,
   clearMessages,
+  deleteMessage,
 };

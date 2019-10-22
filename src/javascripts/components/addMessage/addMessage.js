@@ -10,7 +10,6 @@ const addMessage = () => {
       $('.clear').attr('disabled', false);
       e.preventDefault();
       const id = Math.floor((Math.random() * 100) + 1000);
-      // printMessage();
       const newMessage = {
         message: $('#message-input').val(),
         timestamp: moment().format('lll'),
@@ -18,7 +17,6 @@ const addMessage = () => {
       };
       m.addMessage(newMessage);
       aMessage.printMessageCards();
-      console.error(newMessage);
     }
   });
 };
