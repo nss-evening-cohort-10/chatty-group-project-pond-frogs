@@ -1,4 +1,4 @@
-const seedData = [
+let seedData = [
   {
     id: 'message1',
     message: 'Why was the JavaScript developer sad?</p><p>Because they didn’t Node how to Express themself',
@@ -31,4 +31,13 @@ const messages = () => seedData.slice(Math.max(seedData.length - 20, 0));
 
 const addMessage = (newMessage) => seedData.push(newMessage);
 
-export default { messages, addMessage, seedData };
+const clearMessages = () => {
+  seedData = [];
+};
+
+export default {
+  messages,
+  addMessage,
+  seedData,
+  clearMessages,
+};
