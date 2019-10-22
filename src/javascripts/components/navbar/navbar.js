@@ -7,7 +7,7 @@ const printNavbar = () => {
   domString += '<a id="logo" class="navbar-brand">Logo</a>';
   domString += '</div>';
   domString += '<div id="message-holder" class="col-8">';
-  domString += '<form class="form-inline">';
+  domString += '<form id="message-form" class="form-inline">';
   domString += '<input id="message-input" type="text" class="form mr-sm-2" placeholder="Your message here">';
   domString += '<button class="btn btn-info my-2 my-sm-0 clear">Clear</button>';
   domString += '</form>';
