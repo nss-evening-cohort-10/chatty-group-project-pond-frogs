@@ -10,9 +10,8 @@ const disableButton = () => {
 
 const clearButton = () => {
   $('body').on('click', '.clear', (e) => {
-    const newArr = data.messages();
-    newArr.splice(0, newArr.length);
     e.preventDefault();
+    data.clearMessages();
     disableButton();
     utilities.printToDom('message-field', '');
   });
