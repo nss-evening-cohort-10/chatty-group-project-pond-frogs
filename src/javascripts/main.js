@@ -1,18 +1,23 @@
 import 'bootstrap';
-import displayMessages from './components/displayMessages/displayMessages';
 
-import '../styles/main.scss';
+import displayMessages from './components/displayMessages/displayMessages';
+import limit from './helpers/data/messages';
 import navbar from './components/navbar/navbar';
 import add from './components/addMessage/addMessage';
 import clear from './components/clearButton/clearButton';
-import mssg from './components/deleteMessage/deleteMessage';
+// import mssg from './components/deleteMessage/deleteMessage';
+import defaultThemes from './components/defaultThemes/defaultThemes';
+
+import '../styles/main.scss';
 
 const init = () => {
-  displayMessages.printMessageCards();
   navbar.printNavbar();
+  displayMessages.printMessageCards();
+  displayMessages.deleteMessage();
   add.addMessage();
+  defaultThemes.changeTheme();
   clear.clearButton();
-  mssg.deleteMessage();
+  limit.messages();
 };
 
 init();

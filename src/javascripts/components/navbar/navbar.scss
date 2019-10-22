@@ -2,39 +2,34 @@ nav{
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-#nav-row-1 {
-    width: 100%;
 
-    #logo-holder {
-        width: 35%;
-        
-    }
-    #message-holder {
-        width: 65%;
-        
-        
+    #nav-row-1 {
+        width: 100%;
 
-        #message-input {
-            width: 80%;
-            height: 100px;
-            margin-top: 2em;
-            margin-right: 1em;
+        #logo-holder {
+            width: 35%;
+        }
+
+        #message-holder {
+            width: 65%;
+                        
+            #message-input {
+                width: 80%;
+                height: 100px;
+                margin-top: 2em;
+                margin-right: 1em;
+            }
         }
     }
-}
-#nav-row-2 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
 
-    .checkboxHolder {
-     margin: 1em;
+    #nav-row-2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        label {
+            margin: 1em;
+        }
     }
-    label {
-        margin: 1em;
-    }
-}
     
-
-
 }
