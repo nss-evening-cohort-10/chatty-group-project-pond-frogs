@@ -5,11 +5,12 @@ import '../styles/main.scss';
 import navbar from './components/navbar/navbar';
 import add from './components/addMessage/addMessage';
 import clear from './components/clearButton/clearButton';
+import mssg from './helpers/data/messages';
 
 const init = () => {
   displayMessages.printMessageCards();
   navbar.printNavbar();
-  // add.uniqueId();
+  mssg.deleteMessage();
   add.addMessage();
   clear.clearButton();
 };

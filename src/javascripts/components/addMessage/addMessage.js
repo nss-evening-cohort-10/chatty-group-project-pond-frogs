@@ -7,6 +7,7 @@ import './addMessage.scss';
 const addMessage = () => {
   $('body').on('keydown', '#message-input', (e) => {
     if (e.keyCode === 13) {
+      $('.clear').attr('disabled', false);
       e.preventDefault();
       const id = Math.floor((Math.random() * 100) + 1000);
       // printMessage();
