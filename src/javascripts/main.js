@@ -1,6 +1,6 @@
 import 'bootstrap';
 import displayMessages from './components/displayMessages/displayMessages';
-// import limit from './components/messageLimit/messageLimit';
+import limit from './helpers/data/messages';
 import '../styles/main.scss';
 import navbar from './components/navbar/navbar';
 import add from './components/addMessage/addMessage';
@@ -11,7 +11,7 @@ const init = () => {
   navbar.printNavbar();
   add.addMessage();
   clear.clearButton();
-  // limit.limitMessages();
+  limit.messages();
 };
 
 init();

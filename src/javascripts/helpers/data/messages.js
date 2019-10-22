@@ -22,7 +22,7 @@ const seedData = [
 
 ];
 
-const messages = () => seedData;
+const messages = () => seedData.slice(Math.max(seedData.length - 20, 0));
 
 const addMessage = (newMessage) => seedData.push(newMessage);
 

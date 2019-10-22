@@ -1,6 +1,5 @@
 import utilities from '../../helpers/utlities';
 import seedData from '../../helpers/data/messages';
-
 import './displayMessages.scss';
 
 const printMessageCards = () => {
