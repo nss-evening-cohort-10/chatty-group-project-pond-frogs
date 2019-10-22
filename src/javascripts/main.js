@@ -8,11 +8,11 @@ import defaultThemes from './components/defaultThemes/defaultThemes';
 import '../styles/main.scss';
 
 const init = () => {
-  add.addMessage();
-  clear.clearButton();
-  defaultThemes.changeTheme();
-  displayMessages.printMessageCards();
   navbar.printNavbar();
+  displayMessages.printMessageCards();
+  add.addMessage();
+  defaultThemes.changeTheme();
+  clear.clearButton();
 };
 
 init();
