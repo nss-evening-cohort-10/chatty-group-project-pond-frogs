@@ -1,5 +1,3 @@
-import moment from 'moment';
-
 import utilities from '../../helpers/utlities';
 import seedData from '../../helpers/data/messages';
 
@@ -12,7 +10,7 @@ const printMessageCards = () => {
     domString += '<div class="card col-5">';
     domString += '<div class="card-body arrow bottom">';
     domString += `<div class="message-body">${message.message}</div>`;
-    domString += `<div>${moment(message.timestamp).format('lll')}</div>`;
+    domString += `<div>${message.timestamp}</div>`;
     domString += '</div>';
     domString += '</div>';
   });

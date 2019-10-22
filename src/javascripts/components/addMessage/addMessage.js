@@ -9,6 +9,7 @@ let numMessages = m.seedData.length;
 const addMessage = () => {
   $('body').on('keydown', '#message-input', (e) => {
     if (e.keyCode === 13) {
+      $('.clear').attr('disabled', false);
       e.preventDefault();
       // printMessage();
       const newMessage = {
