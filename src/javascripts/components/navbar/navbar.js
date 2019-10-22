@@ -4,7 +4,7 @@ import './navbar.scss';
 const printNavbar = () => {
   let domString = '<div id="nav-row-1" class="row">';
   domString += '<div id="logo-holder" class="col-4">';
-  domString += '<a id="logo" class="navbar-brand">Logo</a>';
+  domString += '<a href="src/index.html"><img src="src/javascripts/components/navbar/Logo-Images/clapback_overlay.gif" id="logo"></a>';
   domString += '</div>';
   domString += '<div id="message-holder" class="col-8">';
   domString += '<form id="message-form" class="form-inline">';
