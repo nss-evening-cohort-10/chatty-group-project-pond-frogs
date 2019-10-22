@@ -3,11 +3,16 @@ nav{
     flex-flow: row wrap;
     width: 100%;
 
+
     #nav-row-1 {
         width: 100%;
 
         #logo-holder {
             width: 35%;
+        #logo {
+            height:250px;
+            width: 300px;
+        }
         }
 
         #message-holder {
@@ -23,9 +28,9 @@ nav{
     }
 
     #nav-row-2 {
-        width: 100%;
+        width: 65%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
 
         label {
             margin: 1em;

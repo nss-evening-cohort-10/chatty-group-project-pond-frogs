@@ -17,6 +17,7 @@ const addMessage = () => {
       };
       m.addMessage(newMessage);
       aMessage.printMessageCards();
+      $('#message-form').find('input[type="text"]').val('');
     }
   });
 };
