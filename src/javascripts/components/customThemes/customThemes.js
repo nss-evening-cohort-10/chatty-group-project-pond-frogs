@@ -15,7 +15,7 @@ const customThemeModal = () => {
         <input type="radio" name="themeOptions" id="summerTheme"> Summer
       </label>
       <label class="btn">
-        <input type="radio" name="themeOptions" id="purpleTheme"> Purple
+        <input type="radio" name="themeOptions" id="purpleTheme" checked> Purple
       </label>
     </div>
   </div>`;
